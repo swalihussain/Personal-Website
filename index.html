@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddhant | Cinematic Portfolio</title>
+    <meta name="description" content="Siddhant - Creative Frontend Developer and Designer specializing in premium, immersive web experiences.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Syne:wght@400;600;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="loading">
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-text">
+            <span>Loading Experience...</span>
+            <div class="progress-bar"><div class="progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#" class="brand">SD.</a>
+        <div class="nav-links">
+            <a href="#about" class="hover-target">About</a>
+            <a href="#skills" class="hover-target">Expertise</a>
+            <a href="#projects" class="hover-target">Work</a>
+            <a href="#contact" class="hover-target">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <a href="#contact" class="btn-primary hover-target">Let's Talk</a>
+        </div>
+    </nav>
+
+    <!-- Main Smooth Wrapper -->
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!-- Hero Section (Cinematic Multi-layer Parallax) -->
+            <section id="hero" class="hero-section">
+                <!-- Parallax Layers -->
+                <div class="parallax-wrapper">
+                    <div class="parallax-layer layer-bg" data-speed="0.1">
+                        <img src="assets/img/parallax/layer-bg.png" alt="Background">
+                    </div>
+                    
+                    /* The Stars Particle Layer */
+                    <canvas id="stars-canvas" class="parallax-layer layer-particles" data-speed="0.25"></canvas>
+                    
+                    <div class="parallax-layer layer-mid" data-speed="0.4">
+                        <img src="assets/img/parallax/layer-mid.png" alt="Midground" style="mix-blend-mode: screen; opacity: 0.7;">
+                    </div>
+                    
+                    <!-- Content Layer -->
+                    <div class="parallax-layer layer-content" data-speed="0.6">
+                        <div class="hero-text-container">
+                            <h2 class="sub-heading split-text">Frontend Developer</h2>
+                            <h1 class="main-heading">
+                                <span class="split-text">SIDDHANT</span>
+                                <span class="split-text outline-text">DESIGN</span>
+                            </h1>
+                        </div>
+                    </div>
+                    
+                    <div class="parallax-layer layer-fg" data-speed="0.9">
+                         <img src="assets/img/parallax/layer-fg.png" alt="Foreground" style="mix-blend-mode: multiply; opacity: 0.8;">
+                    </div>
+                </div>
+                
+                <!-- Scroll Indicator -->
+                <div class="scroll-down-indicator">
+                    <p>Scroll to Explore</p>
+                    <div class="line-container">
+                        <div class="scroll-line"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gradient Transition Divider -->
+            <div class="gradient-divider"></div>
+
+            <!-- About Section -->
+            <section id="about" class="section dark-section">
+                <!-- Decorative floating elements -->
+                <div class="ambient-glow glow-1"></div>
+                <div class="ambient-glow glow-2"></div>
+                
+                <div class="container">
+                    <div class="grid-2-col">
+                        <div class="about-content">
+                            <div class="section-badge fade-up">01 — Introduction</div>
+                            <h2 class="section-title fade-up">Crafting Digital <br><span class="text-gradient">Masterpieces.</span></h2>
+                            <p class="body-text fade-up">
+                                I am an interactive web developer with a passion for creating immersive, cinematic online experiences. By blurring the lines between design and engineering, I build websites that don't just function—they leave a lasting impression.
+                            </p>
+                            
+                            <div class="stats-container fade-up delay-1">
+                                <div class="stat-box">
+                                    <h3 class="stat-number">5+</h3>
+                                    <p class="stat-label">Years of Experience</p>
+                                </div>
+                                <div class="stat-box">
+                                    <h3 class="stat-number">60+</h3>
+                                    <p class="stat-label">Projects Completed</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="about-visual parallax-container">
+                            <div class="image-wrapper parallax-element" data-speed="1.2">
+                                <img src="assets/img/profile.png" alt="Siddhant Portrait" class="reveal-img">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="visual-accent parallax-element" data-speed="0.8"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Expertise / Skills Section -->
+            <section id="skills" class="section solid-section">
+                <!-- Moving geometric background -->
+                <div class="geo-bg"></div>
+                
+                <div class="container">
+                    <div class="section-header center">
+                        <div class="section-badge fade-up">02 — The Toolkit</div>
+                        <h2 class="section-title fade-up">Technical <span class="text-gradient">Arsenal</span></h2>
+                    </div>
+
+                    <div class="skills-grid">
+                        <div class="skill-card fade-up hover-target">
+                            <i class="ri-code-s-slash-line skill-icon"></i>
+                            <h3 class="skill-title">Frontend Mastery</h3>
+                            <p class="skill-desc">HTML5, CSS3, JavaScript, TypeScript, React.js, Next.js, TailwindCSS.</p>
+                        </div>
+                        <div class="skill-card fade-up delay-1 hover-target">
+                            <i class="ri-magic-line skill-icon"></i>
+                            <h3 class="skill-title">Creative Coding</h3>
+                            <p class="skill-desc">GSAP, Three.js, WebGL, Framer Motion, Lenis, Custom Shaders.</p>
+                        </div>
+                        <div class="skill-card fade-up delay-2 hover-target">
+                            <i class="ri-pen-nib-line skill-icon"></i>
+                            <h3 class="skill-title">UI/UX Design</h3>
+                            <p class="skill-desc">Figma, Adobe Creative Suite, Prototyping, Wireframing, Interaction Design.</p>
+                        </div>
+                        <div class="skill-card fade-up delay-3 hover-target">
+                            <i class="ri-server-line skill-icon"></i>
+                            <h3 class="skill-title">Backend & Tools</h3>
+                            <p class="skill-desc">Node.js, Express, MongoDB, Git, Vercel, Firebase.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Work Section -->
+            <section id="projects" class="section dark-section">
+                <div class="container container-large">
+                    <div class="section-header">
+                        <div class="section-badge fade-up">03 — Selected Works</div>
+                        <h2 class="section-title fade-up">Featured <span class="text-gradient">Projects</span></h2>
+                    </div>
+
+                    <div class="projects-wrapper">
+                        
+                        <!-- Project 1 -->
+                        <div class="project-card">
+                            <div class="project-visual parallax-container hover-target">
+                                <img src="assets/img/projects/p1.png" alt="Lumina E-Commerce" class="parallax-scale" data-speed="1.1">
+                                <div class="project-overlay">
+                                    <a href="#" class="view-btn">View Case Study</a>
+                                </div>
+                            </div>
+                            <div class="project-info fade-up">
+                                <div class="project-meta">01 / E-Commerce</div>
+                                <h3 class="project-name">Lumina Dashboard</h3>
+                                <div class="project-tech">React • GSAP • Glassmorphism</div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="project-card offset-card">
+                            <div class="project-visual parallax-container hover-target">
+                                <img src="assets/img/projects/p2.png" alt="Nomad Travel App" class="parallax-scale" data-speed="1.1">
+                                <div class="project-overlay">
+                                    <a href="#" class="view-btn">View Case Study</a>
+                                </div>
+                            </div>
+                            <div class="project-info fade-up">
+                                <div class="project-meta">02 / Web Application</div>
+                                <h3 class="project-name">Nomad Travel</h3>
+                                <div class="project-tech">Next.js • Tailwind • Framer</div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="project-card">
+                            <div class="project-visual parallax-container hover-target">
+                                <img src="assets/img/projects/p3.png" alt="Zenith Crypto Wallet" class="parallax-scale" data-speed="1.1">
+                                <div class="project-overlay">
+                                    <a href="#" class="view-btn">View Case Study</a>
+                                </div>
+                            </div>
+                            <div class="project-info fade-up">
+                                <div class="project-meta">03 / FinTech</div>
+                                <h3 class="project-name">Zenith Wallet</h3>
+                                <div class="project-tech">TypeScript • WebGL • Node.js</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section solid-section footer-section">
+                <div class="ambient-glow glow-3"></div>
+                <div class="container">
+                    <div class="footer-content text-center">
+                        <div class="section-badge fade-up">04 — What's Next?</div>
+                        <h2 class="huge-title fade-up">Let's Create<br>Something <span class="text-gradient italic-serif">Epic.</span></h2>
+                        
+                        <div class="contact-cta fade-up delay-1">
+                            <a href="mailto:hello@siddhant.dev" class="magnetic-btn hover-target">
+                                <span class="btn-text">hello@siddhant.dev</span>
+                            </a>
+                        </div>
+                        
+                        <div class="footer-bottom fade-up delay-2">
+                            <div class="socials">
+                                <a href="#" class="hover-target">Twitter (X)</a>
+                                <a href="#" class="hover-target">LinkedIn</a>
+                                <a href="#" class="hover-target">GitHub</a>
+                                <a href="#" class="hover-target">Dribbble</a>
+                            </div>
+                            <div class="copyright">
+                                &copy; 2026 Siddhant. All rights reserved.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <!-- GSAP Core & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
